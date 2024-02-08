@@ -5,11 +5,12 @@ VPC module to create separated staging environment with two public subnets, as p
 Originally created for ECS development.
 256 IP adresses are available with this setup.
 
-To use it:
+Example usage:
 
 ```
 module "vpc_staging" {
-  source = "jakubbialoskorski/terraform-aws-vpc"
+  source = "JakubBialoskorski/vpc/aws"
+  version = "1.0.0"
 
   environment_name        = "staging"
   vpc_cidr                = "10.0.0.0/24"
