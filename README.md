@@ -10,7 +10,7 @@ Example usage:
 ```
 module "vpc_staging" {
   source = "JakubBialoskorski/vpc/aws"
-  version = "1.0.0"
+  version = "1.0.1"
 
   environment_name        = "staging"
   vpc_cidr                = "10.0.0.0/24"
