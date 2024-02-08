@@ -1,4 +1,4 @@
-# vpc-module
+# terraform-aws-vpc
 
 VPC module to create separated staging environment with two public subnets, as per [AWS guide](https://docs.aws.amazon.com/vpc/latest/userguide/subnet-sizing.html).
 
