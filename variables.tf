@@ -36,12 +36,12 @@ variable "public_subnet_interfix" {
 
 variable "additional_tags" {
   type        = map(string)
-  description = "Variable if additional tags is needed"
+  description = "Variable for additional tags"
   default     = {}
 }
 
 variable "default_route" {
   type        = string
-  description = "Default Route from and to internet"
+  description = "Default Route from and to the Internet"
   default     = "0.0.0.0/0"
 }
