@@ -10,7 +10,7 @@ Example usage:
 ```
 module "vpc_staging" {
   source = "JakubBialoskorski/vpc/aws"
-  version = "1.0.1"
+  version = "1.0.2"
 
   environment_name        = "staging"
   vpc_cidr                = "10.0.0.0/24"
@@ -18,8 +18,6 @@ module "vpc_staging" {
   public_subnet_cidr_az_b = ["10.0.0.128/25"]
 
   additional_tags = {
-    Environment = "staging"
-    Terraform   = "yes"
     YourTag     = "whateverYouWant"
   }
 }
