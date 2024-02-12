@@ -9,3 +9,8 @@ output "subnet_staging_public_b" {
 output "vpc_id" {
   value = aws_vpc.vpc.id
 }
+
+# not used by the module, added for extended functionality
+output "vpc_cidr" {
+  value = aws_vpc.vpc_cidr
+}

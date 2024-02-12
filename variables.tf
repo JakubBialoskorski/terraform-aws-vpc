@@ -7,7 +7,7 @@ variable "environment_name" {
 variable "vpc_cidr" {
   type        = string
   description = "VPC CIDR"
-  default     = ""
+  default     = "10.0.0.0/24"
 }
 
 variable "availability_zone" {
@@ -19,13 +19,13 @@ variable "availability_zone" {
 variable "public_subnet_cidr_az_a" {
   type        = list(string)
   description = "Public subnet CIDR within AZ-a"
-  default     = []
+  default     = ["10.0.0.0/25"]
 }
 
 variable "public_subnet_cidr_az_b" {
   type        = list(string)
   description = "Public subnet CIDR within AZ-b"
-  default     = []
+  default     = ["10.0.0.128/25"]
 }
 
 variable "public_subnet_interfix" {
