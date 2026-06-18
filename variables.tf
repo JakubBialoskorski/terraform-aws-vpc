@@ -14,6 +14,11 @@ variable "availability_zone" {
   type        = list(string)
   description = "Availability Zone"
   default     = ["us-east-1a", "us-east-1b"]
+
+  validation {
+    condition     = length(var.availability_zone) == 2
+    error_message = "availability_zone must contain exactly 2 entries (one per public subnet group)."
+  }
 }
 
 variable "public_subnet_cidr_az_a" {
